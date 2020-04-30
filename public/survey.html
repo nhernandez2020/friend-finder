@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Latest compiled and minified CSS & JS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../public/assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Hind:700&display=swap" rel="stylesheet">
+
+    <title>Friend Finder</title>
+
+</head>
+
+<body>
+
+    <div class="jumbotron ">
+        <p class="center">
+            <img id="logo" src="../public/assets/images/logo_transparent.png">
+        </p>
+    </div>
+
+    <div class="container" id="questions">
+
+        <form name="myForm">
+            <div class="form-group">
+                <label for="name">Name (required)</label>
+                <input type="text" class="form-control" name="name" id="formName" placeholder="ex. John Smith" required>
+            </div>
+            <div class="form-group">
+                <label for="photo">Link to Photo (required)</label>
+                <input type="text" class="form-control" name="image" id="formImage"
+                    placeholder="ex. https://facebook-image-here.jpg" required>
+            </div>
+        </form>
+
+        <div class="container" id="survey">
+
+            <p class="survey-center">Survey Questions</p>
+
+            <hr><br>
+
+
+            1. My goals in life are clear.<br>
+            <select class="chosen-select" id="q1" required>
+                <option value=""></option>
+                <option value="1">Stongly Agree</option>
+                <option value="2">Agree</option>
+                <option value="3">Neutral</option>
+                <option value="4">Disagree</option>
+                <option value="5">Strongly Disagree</option>
+            </select> <br><br>
+
+            2. If people are rude to me I just shrug it off.<br>
+            <select class="chosen-select" id="q2" required>
+                <option value=""></option>
+                <option value="1">Stongly Agree</option>
+                <option value="2">Agree</option>
+                <option value="3">Neutral</option>
+                <option value="4">Disagree</option>
+                <option value="5">Strongly Disagree</option>
+            </select><br><br>
+
+            3. I would like to be famous.<br>
+            <select class="chosen-select" id="q3" required>
+                <option value=""></option>
+                <option value="1">Stongly Agree</option>
+                <option value="2">Agree</option>
+                <option value="3">Neutral</option>
+                <option value="4">Disagree</option>
+                <option value="5">Strongly Disagree</option>
+            </select><br><br>
+
+            4. I am religious.<br>
+            <select class="chosen-select" id="q4" required>
+                <option value=""></option>
+                <option value="1">Stongly Agree</option>
+                <option value="2">Agree</option>
+                <option value="3">Neutral</option>
+                <option value="4">Disagree</option>
+                <option value="5">Strongly Disagree</option>
+            </select><br><br>
+
+            5. I am spiritual.<br>
+            <select class="chosen-select" id="q5" required>
+                <option value=""></option>
+                <option value="1">Stongly Agree</option>
+                <option value="2">Agree</option>
+                <option value="3">Neutral</option>
+                <option value="4">Disagree</option>
+                <option value="5">Strongly Disagree</option>
+            </select><br><br>
+
+            6. I don't mind crying at movies.<br>
+            <select class="chosen-select" id="q6" required>
+                <option value=""></option>
+                <option value="1">Stongly Agree</option>
+                <option value="2">Agree</option>
+                <option value="3">Neutral</option>
+                <option value="4">Disagree</option>
+                <option value="5">Strongly Disagree</option>
+            </select><br><br>
+
+            7. I judge people based on how they present themselves.<br>
+            <select class="chosen-select" id="q7" required>
+                <option value=""></option>
+                <option value="1">Stongly Agree</option>
+                <option value="2">Agree</option>
+                <option value="3">Neutral</option>
+                <option value="4">Disagree</option>
+                <option value="5">Strongly Disagree</option>
+            </select><br><br>
+
+            8. I am spontaneous.<br>
+            <select class="chosen-select" id="q8" required>
+                <option value=""></option>
+                <option value="1">Stongly Agree</option>
+                <option value="2">Agree</option>
+                <option value="3">Neutral</option>
+                <option value="4">Disagree</option>
+                <option value="5">Strongly Disagree</option>
+            </select><br><br>
+
+            9. I enjoy going out on the weekends.<br>
+            <select class="chosen-select" id="q9" required>
+                <option value=""></option>
+                <option value="1">Stongly Agree</option>
+                <option value="2">Agree</option>
+                <option value="3">Neutral</option>
+                <option value="4">Disagree</option>
+                <option value="5">Strongly Disagree</option>
+            </select><br><br>
+
+            10. I am happy.<br>
+            <select class="chosen-select" id="q10" required>
+                <option value=""></option>
+                <option value="1">Stongly Agree</option>
+                <option value="2">Agree</option>
+                <option value="3">Neutral</option>
+                <option value="4">Disagree</option>
+                <option value="5">Strongly Disagree</option>
+            </select><br><br>
+
+
+            <!-- Submit Button -->
+            <p class="center"> <button type="submit" class="btn btn-success btn-lg submit" id="submit"><i
+                        class="fa fa-check-circle" aria-hidden="true"></i>
+                    Submit</button><br> </p>
+
+        </div>
+    </div>
+
+
+    <footer>
+        <p class="center">
+            <a href="home.html">Home</a> | <a href="/api/friends">API Friends List</a> | <a
+                href="https://github.com/mbayers6370/friendFinder"><i class="fa fa-github"></i> Github</a>
+        </p>
+    </footer>
+
+    <div class="modal fade" id="results" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="title">Best Match:</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h4 id="match"></h4>
+                    <img id="match-image">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script type="text/javascript">
+        // Capture the form inputs
+        $("#submit").on("click", function (event) {
+            event.preventDefault();
+            var valid = true;
+
+
+            var x = document.forms["myForm"]["name"].value;
+            var y = document.forms["myForm"]["image"].value;
+
+
+            for (i = 1; i <= 10; i++) {
+                var books = $('#q' + [i]);
+                if (books.val() === '') {
+                    books.focus();
+                    valid = false;
+                }
+            }
+
+            if (x == "" && y == "") {
+                valid = false;
+            }
+
+
+            // If all required fields are filled
+            if (valid === true) {
+                // Create an object for the user"s data
+                var userData = {
+                    name: $("#formName").val().trim(),
+                    photo: $("#formImage").val().trim(),
+                    scores: [
+                        $("#q1").val(),
+                        $("#q2").val(),
+                        $("#q3").val(),
+                        $("#q4").val(),
+                        $("#q5").val(),
+                        $("#q6").val(),
+                        $("#q7").val(),
+                        $("#q8").val(),
+                        $("#q9").val(),
+                        $("#q10").val()
+                    ]
+                };
+
+                $.post("/api/friends", userData, function (data) {
+
+                    console.log(data)
+                    // Grab the result from the AJAX post so that the best match's name and photo are displayed.
+                    $("#match").text(data.name);
+                    $("#match-image").attr("src", data.photo);
+                    $("#results").modal("toggle");
+
+                });
+            } else {
+                alert("Please fill out all sections, and select all answers before submitting!");
+            }
+        });
+    </script>
+
+
+</body>
+
+</html>
