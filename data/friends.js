@@ -1,6 +1,6 @@
 var friends = [{
         "name": "Jose",
-        "photo": "../public/assets/download (4).jpeg",
+        "photo": "./assets/download (4).jpeg",
         "scores": [
             5,
             1,
@@ -16,7 +16,7 @@ var friends = [{
     },
     {
         "name": "Juana",
-        "photo": "../public/assets/download (1).jpeg",
+        "photo": "./assets/download (1).jpeg",
         "scores": [
             5,
             4,
@@ -32,7 +32,7 @@ var friends = [{
     },
     {
         "name": "julie",
-        "photo": "../public/assets/download (2).jpeg",
+        "photo": "./assets/download (2).jpeg",
         "scores": [
             1,
             1,
@@ -48,7 +48,7 @@ var friends = [{
     },
     {
         "name": "diana",
-        "photo": "../public/assets/download (3).jpeg",
+        "photo": "./assets/download (3).jpeg",
         "scores": [
             4,
             3,
@@ -64,7 +64,7 @@ var friends = [{
     },
     {
         "name": "miguel",
-        "photo": "../public/assets/download.jpeg",
+        "photo": "./assets/download.jpeg",
         "scores": [
             2,
             5,
@@ -80,7 +80,7 @@ var friends = [{
     },
     {
         "name": "maribel",
-        "photo": "../public/assets/download (5).jpeg",
+        "photo": "./assets/download (5).jpeg",
         "scores": [
             1,
             1,
@@ -96,7 +96,7 @@ var friends = [{
     },
     {
         "name": "gary",
-        "photo": "../public/assets/images (1).jpeg",
+        "photo": "./assets/images (1).jpeg",
         "scores": [
             3,
             3,
@@ -112,7 +112,7 @@ var friends = [{
     },
     {
         "name": "david",
-        "photo": "../public/assets/images (2).jpeg",
+        "photo": "./assets/images (2).jpeg",
         "scores": [
             2,
             4,
@@ -128,7 +128,7 @@ var friends = [{
     },
     {
         "name": "rebecca",
-        "photo": "../public/assets/images.jpeg",
+        "photo": "./assets/images.jpeg",
         "scores": [
             5,
             5,
@@ -144,7 +144,7 @@ var friends = [{
     },
     {
         "name": "edwardo",
-        "photo": "../public/assets/IMG_1548-640x668.jpg",
+        "photo": "./assets/IMG_1548-640x668.jpg",
         "scores": [
             3,
             3,
