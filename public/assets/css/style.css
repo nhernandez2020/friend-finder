@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(230, 230, 230);
+    background-color: light gray
 }
 
 .jumbotron {
@@ -42,8 +42,8 @@ body {
 }
 
 #survey {
-    background-color: rgb(194, 194, 194);
-    border: 3px solid rgb(82, 82, 82);
+    background-color: light gray
+    border: 3px solid light gray  
     padding: 15px;
     text-align: center;
     margin-bottom: 65px;
