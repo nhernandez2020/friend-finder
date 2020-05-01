@@ -144,7 +144,7 @@ var friends = [{
     },
     {
         "name": "edwardo",
-        "photo": "./assets/IMG_1548-640x668.jpg",
+        "photo": "./assets/images (3).jpeg",
         "scores": [
             3,
             3,
